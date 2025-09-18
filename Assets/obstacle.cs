@@ -1,9 +1,7 @@
 using UnityEngine;
 
-public class cam : MonoBehaviour
+public class obstacle : MonoBehaviour
 {
-    public GameObject player;
-   public float offset;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,7 +11,6 @@ public class cam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z - offset);
-
+        
     }
 }
